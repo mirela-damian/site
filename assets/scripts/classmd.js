@@ -26,22 +26,22 @@ function header()
 	this.initNavigation = function(){
 
 		$("#classhome-link").bind("click", function(){
-			window.location = "/~mdamian/classes/"+ $class +"/index.html";
+			window.location = "/site/classes/"+ $class +"/index.html";
 		});
 		$("#syllabus-link").bind("click", function(){
-			window.location = "/~mdamian/classes/"+ $class+ "/Syllabus.html";
+			window.location = "/site/classes/"+ $class+ "/Syllabus.html";
 		});
 
 		$("#schedule-link").bind("click", function(){
-			window.location = "/~mdamian/classes/"+ $class +"/Schedule.html";
+			window.location = "/site/classes/"+ $class +"/Schedule.html";
 		});
 
 		$("#assignments-link").bind("click", function(){
-			window.location = "/~mdamian/classes/"+ $class+ "/Assignments.html";
+			window.location = "/site/classes/"+ $class+ "/Assignments.html";
 		});
 
 		$("#labs-link").bind("click", function(){
-			window.location = "/~mdamian/classes/"+ $class+ "/Labs.html";
+			window.location = "/site/classes/"+ $class+ "/Labs.html";
 		});
 
 		$("#forum-link").bind("click", function(){
