@@ -25,18 +25,18 @@ function header()
 	*/
 	this.initNavigation = function(){
 		$("#home-link").bind("click", function(){
-			window.location = "/";
+			window.location = "/site/";
 		});
 		$("#teaching-link").bind("click", function(){
-			window.location = "/classes";
+			window.location = "/site/classes";
 		});
 
 		$("#research-link").bind("click", function(){
-			window.location = "/research";
+			window.location = "/site/research";
 		});
 
 		$("#publications-link").bind("click", function(){
-			window.location = "/publications";
+			window.location = "/site/publications";
 		});
 
 		$("#contact-link").bind("click", function(){
@@ -78,13 +78,13 @@ function header()
 	this.setActiveItem = function(){
 		var pathname = window.location.pathname;
 	
-		if(pathname.indexOf("/classes/") == 0){
+		if(pathname.indexOf("/site/classes/") == 0){
 			$("#teaching-link").addClass("active");
-		}else if(pathname.indexOf("/research/") == 0){
+		}else if(pathname.indexOf("/site/research/") == 0){
 			$("#research-link").addClass("active");
-		}else if(pathname.indexOf("/publications/") == 0){
+		}else if(pathname.indexOf("/site/publications/") == 0){
 			$("#publications-link").addClass("active");
-		}else if( pathname == "/" || pathname == "/index.html"){
+		}else if( pathname == "/site/" || pathname == "/site/index.html"){
 			$("#home-link").addClass("active");
 		}
 	}
@@ -114,7 +114,7 @@ function header()
 				$("#cse-search-input-box-id").removeClass("required");
 
 				if(window.location.pathname != "search.html"){
-					var urlWithQuery = "/search.html?q=" + searchTerm;
+					var urlWithQuery = "/site/search.html?q=" + searchTerm;
 
 					window.location = urlWithQuery;
 				}else{
