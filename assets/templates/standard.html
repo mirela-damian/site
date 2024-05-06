@@ -1,0 +1,35 @@
+<!-- This is the STANDARD TEMPLATE, it should be used for all normal pages -->
+<html>
+	<head>
+		<title>Mirela Damian</title>
+		<?
+			include($_SERVER['DOCUMENT_ROOT'] . "/~mdamian/assets/templates/head.html")
+		?>
+	</head>
+
+	<body>
+		<!-- loading animation that will be displayed on all pages until resources have loaded -->
+		<div id="curtain"></div><!-- this is the curtain that hides the content as it loads -->
+		<div class="spinner"> <!-- this is the animation -->
+  			<div class="double-bounce1"></div>
+  			<div class="double-bounce2"></div>
+  			<div class="title">Mirela Damian, PhD</div>
+		</div>
+
+		<div id="error"><!-- this is filled-out automatically if there is an error  --></div>
+		<?
+			include($_SERVER['DOCUMENT_ROOT'] . "/~mdamian/assets/templates/navigation.html")
+		?>
+
+		<!-- ******************************************************** 
+			PUT YOUR PAGE CONTENT HERE, WRAPPED IN AN ARTICLE TAG 
+		************************************************************** -->
+		<article>
+		
+ 		</article>
+
+		<?
+			include($_SERVER['DOCUMENT_ROOT'] . "/~mdamian/assets/templates/footer.html")
+		?>
+	</body>
+</html>

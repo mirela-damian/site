@@ -1,0 +1,652 @@
+body{
+	/* Just some "resets" so all browswers start the same */
+	margin:0px;
+	padding:0px;
+}
+
+h1{	
+	font-family: GothamLightRegular;
+	margin-top: .5em;
+	margin-bottom:.1px;
+	color: #003366;
+	text-transform: uppercase;
+}
+
+	h1+p{
+		margin-top: .25em;
+	}	
+
+/* Default for links */
+a:link, a:visited, a:hover, a:active{
+	color:#003366;
+	font-family: GothamBook;
+}
+
+em{
+	font-style: italic;
+	color:#003366;
+	font-weight: bold;
+}
+
+/************************************************
+*	Header Styles
+*************************************************/
+header{
+	background-color:#003366;
+	color: white;
+	min-height:100px;
+	size:2em;
+	padding:1em;
+}
+
+	header h2{
+		border-bottom: none;
+	}
+
+	header .site-logo{
+		float:left;
+		margin-right:1em;
+		margin-top:1em;
+	}
+
+	header .title{
+		float:left;
+	}
+
+	header .title a, header .title a:link, header .title a:visited, header .title a:hover, header .title a:active {
+		color:white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	header h1{	
+		text-transform: inherit;
+		color:white;
+		margin:0px;			
+		padding:0px;
+		margin-top:.3em;	
+		font-family: GothamBook;
+		margin-bottom:.0em;
+
+			/* Don't allow text selection */
+		  -webkit-touch-callout: none; /* iOS Safari */
+	    -webkit-user-select: none; /* Safari */
+	     -khtml-user-select: none; /* Konqueror HTML */
+	       -moz-user-select: none; /* Firefox */
+	        -ms-user-select: none; /* Internet Explorer/Edge */
+	            user-select: none; /* Non-prefixed version, currently
+	                                  supported by Chrome and Opera */
+	}
+
+	header h2{	
+		margin:0px;			
+		padding:0px;
+		font-size:1.2em;
+		font-family: GothamExtraLightRegular;
+
+			/* Don't allow text selection */
+		  -webkit-touch-callout: none; /* iOS Safari */
+	    -webkit-user-select: none; /* Safari */
+	     -khtml-user-select: none; /* Konqueror HTML */
+	       -moz-user-select: none; /* Firefox */
+	        -ms-user-select: none; /* Internet Explorer/Edge */
+	            user-select: none; /* Non-prefixed version, currently
+	                                  supported by Chrome and Opera */
+	}
+
+	/* 
+		The hamburger menu used on mobile
+	*/
+	header #hamburger{
+		color:white;
+		display: none;
+		position: absolute;
+
+		right:2em;
+		top:3em;
+	}
+
+	/*
+		Search Box styles
+	*/
+	header .search{
+		float:right
+	}
+
+		header .search input{
+			height:29px;
+			width:200px;
+			padding-left: .25em;
+		}
+
+		header .search .button{
+			float:right;
+			margin-left:1em;
+			background-color: #0077B0;
+			color:#003366;
+			width: 55px;
+			height:29px;
+			text-align:center;line-height:100%;
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		}
+
+			header .search .button:hover{
+				cursor: pointer;
+				background-color:#0B5E8C;
+			}
+
+		header .search .button .line-height-helper{
+			display: inline-block;
+			height: 100%;
+			vertical-align: middle;
+		}
+
+		header .search .button img{
+			vertical-align: middle;
+		}
+
+/************************************************
+*	Navigation Container Styles
+*************************************************/
+nav{
+	min-height: 1em;
+	background-color: whitesmoke;
+	text-transform: uppercase;
+	border-bottom: 1px solid lightgrey;
+	font-family: GothamLightRegular;
+	display: block;
+	/* Don't allow text selection */
+	  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+	nav ul{
+		display: block;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+
+	nav li {
+		float: left;
+		padding:.4em;
+		padding-left:2em;
+		padding-right:2em;
+	}
+
+	nav li:first-child {
+		padding-left:3em;
+		padding-right:3em;
+	}
+	
+	nav li:hover {
+		cursor: pointer;
+		background: lightgrey;
+	}
+
+	nav li.active {
+		background: lightgrey;
+	}
+
+/************************************************
+*	Article Styles
+*
+*	The Article is the "main content section" of each page. This semantic
+*	tag is good practice for search engines, screen readers, etc.
+*
+*************************************************/
+article {
+	padding:1em;
+	min-height: 250px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: GothamLightRegular, GothamBoldRegular;
+	
+	color: #333333;
+	background-color: white;
+	font-size: 14px;
+	line-height: 1.42857143;
+	min-height: 350px;
+	margin:0 auto;
+	float: left;
+	width: 100%;
+	background: white;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+	article h1+h5{
+		margin-top: 0em;
+		margin-bottom:.2em;
+		padding-top: 0em;
+		color:grey;
+		font-size: 1em
+	}
+	article h1+h5+h5{
+		margin-top: 0em;
+		padding-top: 0em;
+	}
+
+
+	article h3{
+		margin-bottom: .25em;
+		padding-bottom: 0em;
+
+		font-family: GothamLightRegular;
+		color: #003366;
+		margin-top: 2em;
+		font-size: 1em;
+		text-transform: uppercase;
+	}
+
+		article h3+ol{
+			margin-top: 0px;
+		}
+
+		article h3+p{
+			margin-top: .25em;
+		}
+
+	article h2{
+		margin-bottom: .25em;
+		padding-bottom: 0em;
+
+		font-family: GothamLightRegular;
+		color: #003366;
+		margin-top: 1em;
+		font-size: 1.1em;
+		text-transform: uppercase;
+	}
+
+/*	article b{
+		font-family: GothamBoldRegular;
+		font-weight:  bold;
+		color: #001122;
+		font-size: 10em;
+		text-transform: uppercase;
+	} */
+
+	article p, article ol, article ul{
+		margin-left: .5em;
+	}
+
+	article ol, article ul{
+		padding-left: 1.5em;
+	}
+
+	article li{
+		padding-bottom: .3em;
+		padding-top:.3em;
+	}
+
+	/*
+		Hero image is a term used in web design for a specific type of web banner. 
+		A hero image is a large banner image, prominently placed on a web page, 
+		generally in the front and center. This is out hero, it's full width, 
+		put anything in you want.
+	*/
+	article .hero{
+		float:left;
+		width:100%;
+		margin:auto;  
+		text-align:center;
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
+
+		article .hero div.block{
+			display:inline-block;
+		}
+
+		article .hero .caption{
+			clear:left;
+		}
+
+	/*
+		usually used as the only image within an article, similar to 
+		a brochure. At desktop width this is floated right and the text 
+		wraps around it. On mobile, it appears below
+	*/
+	article .callout{
+		width:50%;
+		padding:.5em;
+		float: right;
+	}
+
+	article .callout img{
+		width:75%;
+		padding-left: 2em;
+	}
+	article .callout figcaption{
+		width:75%;
+		padding-left: 2em;
+	}
+
+	/* 
+		if you want to use a column approach (e.g. two columns), use this class and the 
+		associated column-2. The second column will stack on mobile.
+	*/
+	/*article .column-1{
+		float:left;
+		width:48%;
+	}
+
+	article .column-2{
+		float:left;
+		width:48%;
+	}
+	*/
+
+	/*
+		Default for links within an article
+	*/
+	article a, article a:link, article a:visited, article a:hover, article a:active {
+		color:#333333;
+	}
+
+	/* 
+		Grants that have been awarded are displayed in an unordered list
+	*/
+	article ul.grant{
+		background-color: whitesmoke;
+		padding-left: 0px;
+		 overflow: auto;
+	}
+
+		article ul.grant li{
+			list-style: none;
+			padding: .25em;
+			padding-left: .5em;
+			padding-top: .5em;
+			padding-bottom: .5em;
+		}
+
+/************************************************
+*	Footer Styles
+*************************************************/
+footer{
+	size:2em;
+}
+	
+	/*
+		Default link behavior for anchors in the footer
+	*/
+	footer a, footer a:link, footer a:visited, footer a:hover, footer a:active {
+	    color: #666666;
+	    text-decoration: none;
+        background-color: transparent;
+	}
+
+	/*
+		The footer is divided into two sections, "TOP" and "BOTTOM". This creates
+		the familiar "mega footer" allowing for a section of links (notmally the bottom)
+		and a section of "call outs" or other less important elements
+	*/
+	footer .top{
+		background-color: #B6C3C9;
+		padding: 1em;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 14px;
+		line-height: 1.42857143;
+		color: #333333;
+		float: left;
+
+		width: 100%;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+	}
+
+		footer .top h4 {
+    		color: #333;
+    		font-size: 1.5em;
+    		font-family: GothamBook;
+			line-height: 1.1;
+    		font-weight: 500;
+		    margin: 5px 0px;
+		}
+
+		footer .top p {
+			margin: 0 0 10px;
+		}
+
+		/*
+			The TOP section can be divided into two columns which
+			will stack on mobile devices, etc.
+		*/
+		footer .top .coloumn-1 {
+			width:48%;
+			float:left;
+		}
+
+		footer .top .coloumn-2 {
+			width:48%;
+			float:right;
+		}
+
+			/*
+				Originally designed to contain a "quote" from M.D.
+				within the footer.
+			*/
+			footer .top .quote-container{
+				float: left;
+			}
+
+				/* Originally designed for a pic of M.D. */
+				footer .top .quote-container .head-shot{
+					float: right;
+					margin-left: 1em;
+
+				}
+
+				/* The actual quote */
+				footer .top .quote-container .quote{
+					padding-top:1em;
+					padding-left:1em;
+				}
+
+			/*
+				Could have been called "address card" or similar, basically
+				this is a place to put an address, phone number, etc.
+			*/
+			footer .top .location{
+				float:left;
+				font-family: GothamExtraLightRegular;
+				margin-right: 2em;
+				padding-left:1em;
+
+			}
+
+				footer .top  .location ul{
+					list-style: none;
+					margin-left: 0em;
+					padding-left: 0em;
+				}
+
+	/*
+		The footer is divided into two sections, "TOP" and "BOTTOM". This creates
+		the familiar "mega footer" allowing for a section of links (notmally the bottom)
+		and a section of "call outs" or other less important elements
+	*/
+	footer .bottom{
+		float: left;
+		width: 100%;
+		background-color:#003366;
+		color: white;
+		min-height:100px;
+		padding: 1em;
+		box-sizing: border-box;
+	}
+
+		/* title of the section, designed to be full-width on all devices */
+		footer .bottom .title{
+			border-bottom: solid 1px #ffffff;
+			padding-bottom: 5px;
+			margin-bottom: 10px;
+			font-size: 1em;
+			font-family: GothamExtraLightRegular;
+		}
+
+		/*
+			A container of links
+		*/
+		footer .bottom .quick-links{
+			float:left;
+		}
+
+			footer .bottom .quick-links ul{
+				margin-top: .4em;
+			}
+
+			footer .bottom .quick-links li{
+				list-style: none;
+				padding-bottom: .2em;
+			}
+
+			/* 
+				Default anchor behavior for quick links
+			*/
+			footer .bottom .quick-links a, footer .bottom .quick-links a:link, 
+			footer .bottom .quick-links a:visited, footer .bottom .quick-links a:hover, 
+			footer .bottom .quick-links a:active {
+				color:white;
+			}
+
+		/*
+			Probably poorly named, but it is unlikely this image will be anything by 
+			a Villanova logo in the future.
+		*/
+		footer .bottom .nova-logo{
+			float:right;
+			padding-right:2em;
+			margin-top:1em;
+		}
+
+/************************************************
+*	Page Specific Styles
+*************************************************/
+
+/* Used on the research page */
+.research .contributor{
+	clear: left;
+	float: left;
+	margin-bottom: 1em;
+	padding-left: 2em;
+	width: 100%
+}
+
+	.research .contributor{
+		float: left;
+		padding-bottom: .25em;
+	}
+
+/* Used on the teaching page */
+.teaching{
+
+}
+
+	.teaching .row{
+	    float: left;
+	    padding-top: .5em;
+	    padding-bottom: .5em;
+		width: 100%;
+		margin-bottom: 1em;
+		border:1px solid lightgrey;
+	  }
+
+		.teaching .row:nth-child(even) {
+			background: whitesmoke
+		}
+
+		.teaching .row .column-1{
+	    	padding-left: .5em;
+	    	float: left;
+	    	clear:left;
+	    	font-weight: bold;
+			width: 96%;
+	  	}
+
+  		.teaching .row .column-2, .description.emphasize{
+    		float: left;
+    		padding-right: .5em;
+    		padding:1em;
+    		padding-left: 2em;
+    		max-width:1200px;
+  		}		
+  		
+		.teaching h3+ol{
+			margin-top: 0px;
+   			padding-top: 0em;
+		}
+
+		.teaching h3+ul{
+			margin-top: 0px;
+		}
+
+		.teaching h3+top{
+			margin-top: 0px;
+		}
+
+  		.teaching .row .emphasize{
+    		font-size: 1.2em;
+    		text-transform: uppercase; 
+    		color:#003366;
+    		font-weight: bold;
+  		}
+
+		.teaching .row .exam{
+			color:red;
+  		}
+
+  	.teaching .meeting{
+	    float: left;
+	    padding-top: .5em;
+	    padding-bottom: .5em;
+		width: 100%;
+	  }
+
+/************************************************
+*	General Styles
+*************************************************/
+#error{
+	background: maroon;
+	color:white;
+	padding:1em;
+	display: none;
+}
+
+
+/*
+	Default style for all captions
+*/
+figcaption{
+	font-style: italic;
+	color:grey;
+}
+
+.watermark{
+	text-transform: lowercase;
+	color: grey;
+}
+
+.show-on-very-small{
+	display: none;
+}
+
+input.required{
+	border:3px solid red;
+}
+
+.syntaxhighlighter{
+	border:1px solid lightgrey;
+	padding-left:1em;
+	padding-top:1em;
+	padding-bottom:1em;
+}

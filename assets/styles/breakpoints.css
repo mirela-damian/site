@@ -1,0 +1,252 @@
+
+@media only screen 
+and (max-width : 895px) { 
+	#contact-link{
+		display: none;
+	}
+
+	h1{	
+		margin-top: 0em;
+	}
+}
+
+@media only screen 
+and (max-width : 740px) { 
+	header .search{
+		display: none;
+	}
+
+	header #hamburger{
+		display: block;
+
+		width: 30px;
+		height: 20px;
+
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+		-webkit-transition: .5s ease-in-out;
+		-moz-transition: .5s ease-in-out;
+		-o-transition: .5s ease-in-out;
+		transition: .5s ease-in-out;
+	}
+
+		header #hamburger span {
+		  display: block;
+		  position: absolute;
+		  height: 4px;
+		  width: 100%;
+		  background: white;
+		  opacity: 1;
+		  left: 0;
+		  -webkit-transform: rotate(0deg);
+		  -moz-transform: rotate(0deg);
+		  -o-transform: rotate(0deg);
+		  transform: rotate(0deg);
+		  -webkit-transition: .25s ease-in-out;
+		  -moz-transition: .25s ease-in-out;
+		  -o-transition: .25s ease-in-out;
+		  transition: .25s ease-in-out;
+		}
+
+		header #hamburger span:nth-child(1) {
+		  top: 0px;
+		}
+
+		header #hamburger span:nth-child(2),header #hamburger span:nth-child(3) {
+		  top: 9px;
+		}
+
+		header #hamburger span:nth-child(4) {
+		  top: 18px;
+		}
+
+		header #hamburger.open span:nth-child(1) {
+		  top: 9px;
+		  width: 0%;
+		  left: 50%;
+		}
+
+		header #hamburger.open span:nth-child(2) {
+		  -webkit-transform: rotate(45deg);
+		  -moz-transform: rotate(45deg);
+		  -o-transform: rotate(45deg);
+		  transform: rotate(45deg);
+		}
+
+		header #hamburger.open span:nth-child(3) {
+		  -webkit-transform: rotate(-45deg);
+		  -moz-transform: rotate(-45deg);
+		  -o-transform: rotate(-45deg);
+		  transform: rotate(-45deg);
+		}
+
+		header #hamburger.open span:nth-child(4) {
+		  top: 18px;
+		  width: 0%;
+		  left: 50%;
+		}
+
+		.teaching header .title h1{
+            font-size:1.6em;
+		}
+
+	nav ul{
+		display: none;
+	}
+
+		nav ul{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+
+		nav li {
+			float: inherit;
+			padding:.4em;
+			padding-left:1em;
+			margin-left:0em;
+			margin-right:0em;
+		}
+
+		nav li:first-child {
+			padding-left:1em;
+			margin-left:0em;
+			margin-right:0em;
+		}
+		
+		nav li:hover {
+			/* Remove mouse capabilities, this is mobile */
+			cursor: inherit;
+			background: inherit;
+		}
+
+		nav li.active {
+			background: lightgrey;
+		}
+
+		/* Move the callout to the left, it looks better */
+		article .callout{
+			float: left;
+		}
+
+		/* Now the columns will stack */
+		article .column-1{
+			width:100%;
+		}
+
+		article .column-2{
+			margin-top:1em;
+			clear:left;
+			float: left;
+			width:100%;
+		}
+
+		/* Now the columns will stack */
+		footer .top .coloumn-1{
+			width:100%;
+		}
+
+		footer .top .coloumn-2{
+			margin-top:1em;
+			clear:left;
+			float: left;
+			width:100%;
+		}
+}
+
+@media only screen 
+and (max-width : 700px) {
+	footer .bottom .nova-logo{
+		padding-right: .1em;
+	}
+}
+
+@media only screen 
+and (max-width : 640px) {
+	
+	/* 
+		Don't show the arrow image that is in the HTML 
+	*/
+	.proximity article .hero #arrow img{
+		display: none;
+	}
+
+	/* 
+		... Rather show a new image, that is "vertical" as the boxes stack at this 
+		width and we want to reflect an arrow going down, not right to left. 
+	*/
+	.proximity article .hero #arrow{
+		margin-top: 1em;
+		margin-bottom: 1em;
+		width:100%;
+		height:75px;
+		background-image: url("/assets/images/arrow_down.png");
+		background-repeat: no-repeat;
+		 background-position: center; 
+	}
+}
+
+@media only screen 
+and (max-width : 612px) {
+	header .site-logo{
+		display: none;
+	}
+
+	footer .bottom .quick-links ul{
+		padding-left: 1em;
+	}
+
+	footer .bottom .nova-logo{
+		clear:left;
+		text-align: center;
+		float: left;
+		width: 100%;
+		margin-top:2em;
+	}
+
+	footer .bottom .nova-logo img{
+    	margin-left: auto;
+    	margin-right: auto;
+    }
+} 
+
+@media only screen 
+and (max-width : 580px) {
+	footer .bottom .nova-logo{
+		clear:left;
+		text-align: center;
+		float: left;
+	}
+} 
+
+@media only screen 
+and (max-width : 460px) {
+	/* hide the callout, no need on mobile */
+	article .callout{
+		display: none;
+	}
+
+	article p, article ol, article ul{
+		margin-left: 0em;
+	}
+}
+
+@media only screen 
+and (max-width : 400px) {
+	.hide-on-very-small{
+		display: none;
+	}
+
+	.show-on-very-small{
+		display: block;
+	}
+
+	header #hamburger{
+		top: 2em;
+		right: 1em;
+	}
+} 
+
