@@ -25,18 +25,18 @@ function header()
 	*/
 	this.initNavigation = function(){
 		$("#home-link").bind("click", function(){
-			window.location = "/~mdamian/";
+			window.location = "/";
 		});
 		$("#teaching-link").bind("click", function(){
-			window.location = "/~mdamian/classes";
+			window.location = "/classes";
 		});
 
 		$("#research-link").bind("click", function(){
-			window.location = "/~mdamian/research";
+			window.location = "/research";
 		});
 
 		$("#publications-link").bind("click", function(){
-			window.location = "/~mdamian/publications";
+			window.location = "/publications";
 		});
 
 		$("#contact-link").bind("click", function(){
@@ -78,13 +78,13 @@ function header()
 	this.setActiveItem = function(){
 		var pathname = window.location.pathname;
 	
-		if(pathname.indexOf("/~mdamian/classes/") == 0){
+		if(pathname.indexOf("/classes/") == 0){
 			$("#teaching-link").addClass("active");
-		}else if(pathname.indexOf("/~mdamian/research/") == 0){
+		}else if(pathname.indexOf("/research/") == 0){
 			$("#research-link").addClass("active");
-		}else if(pathname.indexOf("/~mdamian/publications/") == 0){
+		}else if(pathname.indexOf("/publications/") == 0){
 			$("#publications-link").addClass("active");
-		}else if( pathname == "/~mdamian/" || pathname == "/~mdamian/index.html"){
+		}else if( pathname == "/" || pathname == "/index.html"){
 			$("#home-link").addClass("active");
 		}
 	}
@@ -114,7 +114,7 @@ function header()
 				$("#cse-search-input-box-id").removeClass("required");
 
 				if(window.location.pathname != "search.html"){
-					var urlWithQuery = "/~mdamian/search.html?q=" + searchTerm;
+					var urlWithQuery = "/search.html?q=" + searchTerm;
 
 					window.location = urlWithQuery;
 				}else{
